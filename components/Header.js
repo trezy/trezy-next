@@ -15,7 +15,7 @@ import Nav from './Nav'
 export default class Header extends React.Component {
   render () {
     return (
-      <header>
+      <header role="banner">
         <div className="brand" />
 
         <Nav />

@@ -1,5 +1,6 @@
 // Module imports
 import React from 'react'
+import Link from 'next/link'
 
 
 
@@ -26,11 +27,15 @@ export default class extends React.Component {
         <Head title={this.title} />
         <Header />
 
-        <Hero>
-          <h1>This is a hero!</h1>
+        <main>
+          <Hero>
+            <h1>This is a hero!</h1>
 
-          <p>This is its text!</p>
-        </Hero>
+            <p>This is its text!</p>
+
+            <Link href="/services">Hire us!</Link>
+          </Hero>
+        </main>
       </div>
     )
   }

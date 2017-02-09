@@ -26,7 +26,9 @@ export default class extends React.Component {
 
         <Header />
 
-        <p>{this.title}</p>
+        <main>
+          <p>{this.title}</p>
+        </main>
       </div>
     )
   }

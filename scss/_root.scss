@@ -4,7 +4,7 @@
   text-overflow: ellipsis;
 }
 
-html, body {
+html, body, [data-reactroot] {
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -16,11 +16,14 @@ html {
   font-size: 10px;
 }
 
-body {
+[data-reactroot] {
   align-content: stretch;
   align-items: stretch;
+  background-color: $black;
+  color: $white;
   display: flex;
+  flex-direction: column;
   font-family: Raleway, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
 }

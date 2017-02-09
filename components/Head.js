@@ -9,7 +9,7 @@ export default class Head extends React.Component {
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-        <link href="/static/app.css" rel="stylesheet" />
+        <link href="/static/compiled/app.css" rel="stylesheet" />
       </NextHead>
     )
   }

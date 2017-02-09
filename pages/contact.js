@@ -42,6 +42,6 @@ export default class extends React.Component {
   \***************************************************************************/
 
   get title () {
-    return 'About'
+    return 'Contact'
   }
 }

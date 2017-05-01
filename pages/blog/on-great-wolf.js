@@ -1,13 +1,14 @@
 // Module imports
 import React from 'react'
+import Link from 'next/link'
 
 
 
 
 
 // Component imports
-import Head from '../components/Head'
-import Header from '../components/Header'
+import Blog from '../../components/Blog'
+import Page from '../../components/Page'
 
 
 
@@ -21,15 +22,9 @@ export default class extends React.Component {
 
   render () {
     return (
-      <div>
-        <Head title={this.title} />
-
-        <Header />
-
-        <main>
-          <p>{this.title}</p>
-        </main>
-      </div>
+      <Page title={this.title}>
+        <Blog id="573dd2235182837e0d2cb856" />
+      </Page>
     )
   }
 
@@ -42,6 +37,6 @@ export default class extends React.Component {
   \***************************************************************************/
 
   get title () {
-    return 'About'
+    return 'On Great Wolf | Blog'
   }
 }

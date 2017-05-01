@@ -1,7 +1,7 @@
 module.exports = {
   default: [
     'build',
-    'watch:appCSS'
+    'watch'
   ],
 
   build: [
@@ -9,11 +9,16 @@ module.exports = {
   ],
 
   buildCSS: [
-    'buildAppCSS'
+    'buildAppCSS',
+    'buildLibCSS'
   ],
 
   buildAppCSS: [
     'sass_globbing',
     'sass:appCSS'
+  ],
+
+  buildLibCSS: [
+    'sass:libCSS'
   ]
 }

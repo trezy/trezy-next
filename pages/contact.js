@@ -21,15 +21,18 @@ export default class extends React.Component {
 
   render () {
     return (
-      <div>
-        <Head title={this.title} />
+      <Page title={this.title}>
+        <header className="page-header">
+          <h2>{this.title}</h2>
+        </header>
 
-        <Header />
-
-        <main>
-          <p>{this.title}</p>
-        </main>
-      </div>
+        <section>
+          <ul>
+            <li>Telephone: <a href="tel:+1 (270) 210-2618">+1 (270) 210-2618</a></li>
+            <li>Email: <a href="mailto:tre@trezy.com">tre@trezy.com</a></li>
+          </ul>
+        </section>
+      </Page>
     )
   }
 

@@ -4,7 +4,10 @@
   text-overflow: ellipsis;
 }
 
-html, body, [data-reactroot] {
+html,
+body,
+[data-reactroot],
+[role=application] {
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -16,14 +19,24 @@ html {
   font-size: 10px;
 }
 
-[data-reactroot] {
+[role=application] {
   align-content: stretch;
   align-items: stretch;
-  background-color: $black;
-  color: $white;
+  background-color: white;
+//  background-image:
+//    linear-gradient(
+//      to bottom,
+//      rgba($black, 0.5),
+//      rgba($black, 0.5)
+//    ),
+//    url(/static/images/new-horizons.jpeg);
+  background-position: bottom right;
+  background-size: cover;
+  color: $black;
   display: flex;
-  flex-direction: column;
-  font-family: Raleway, sans-serif;
+//  flex-direction: column;
+  font-family: Orkney, sans-serif;
   font-size: 14px;
+  font-weight: 100;
   line-height: 2;
 }
